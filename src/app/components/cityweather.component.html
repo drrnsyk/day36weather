@@ -1,0 +1,14 @@
+<h1>This is the weather for:</h1>
+<div *ngIf="weather == null">
+    <h2>Oops, looks like there is no response</h2>
+</div>
+<div *ngIf="weather != null">
+    <h2>{{weather.name}}</h2>
+    
+    <div>
+        <p><span>Temp: </span><span>{{weather.temp}}</span></p>
+        <p><span>Humidity: </span><span>{{weather.humidity}}</span></p>
+        <p><span>Description: </span><span>{{weather.description}}</span></p>
+    </div>
+</div>
+
